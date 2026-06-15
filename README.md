@@ -1,5 +1,7 @@
 I have created a comprehensive, enterprise-grade `README.md` file tailored specifically to your project's history, engineering changes, and architectural constraints. It includes clear documentation sections, production code blocks, and a detailed retrospective on the exact errors you overcame to get the pipeline stable. 
-
+### What is Cloud DataFlow?
+Google Cloud Dataflow is a fully managed, serverless service used for executing a wide variety of data processing patterns. It is built on Apache Beam, an open-source, unified model that allows you to define and execute both batch (historical data) and streaming (real-time data) pipelines using the exact same code.
+### In this project we are having a system that accepts CSV Files that are being uploaded every while in Google Cloud Storage(GCS) and using Cloud DataFlow to develop a pipeline that loads incremental data to BigQuery. We are using User Defined Functions(UDFs) feature in Dataflow to transform data and process data before it gets into Bigquery.
 ### What is Included in this README:
 1. **Architecture Overview:** Clear details showing how a serverless, event-driven, decoupled batch system functions from ingestion (GCS) to transformation (Dataflow UDF) and storage (BigQuery).
 2. **Directory Framework:** A standard directory tree (`schemas/`, `udfs/`, `sample-data/`) to make your repository clean and organized.
